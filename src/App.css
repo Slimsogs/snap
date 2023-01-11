@@ -1,38 +1,333 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainCon{
+  /* height: 100%;
+  width: 100%; */
+  max-width: 100vh;
+  margin: 8vh auto 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Con{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.writCon{
+  width: 360px;
+  height: 500px;
+  margin-top: 90px;
+  margin-left: -100px;
+  
+}
+.writCon h1{
+  padding: 30px 5px 0px 0;
+  font-size: 57px;
+}
+ 
+.btn1{
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background-color: black;
   color: white;
+  width: 130px;
+  height: 43px;
+  border-radius: 16px;
+}
+.btn1:hover{
+  background:none;
+  color: black;
+  border-color: 1px black;
+  font-weight: 400;
+}
+.writCon p{
+  padding: 16px 5px 0px 0;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 16px;
+
+}
+.photo #hor {
+ width: 140%;
+ /* aspect-ratio: 3/2; */
+ height: 480px;
+ /* object-fit: contain; */
+  margin-right: 20px;
+}
+.pic{
+  
+  width: 110%;
+  margin-top: 30px;
+}
+svg{
+  transform: scale(0.75);
+
+} 
+.svgCon{
+ margin-top: 55px;
+ margin-left: -15px;
+}
+/* Nav Styles */
+
+.navCon ul li {
+  padding-left: 25px;
+  font-family: 'Epilogue', sans-serif;
+
+}
+.dropdown-menu .svgNav{
+  margin-right: 10px ;
+  margin-left: -20px;
+
+}
+.dropdown-menu{
+  width: 50px;
+  height: 135px;
+  border-color: ;
+  box-shadow: 20px;
+}
+.btn2{
+  background: none;
+  font-family: 'Epilogue', sans-serif;
+  border: none;
+  margin: 0 30px;
+  color:hsl(0, 0%, 41%);
+
+}
+.btn3{
+  background:none;
+  color:hsl(0, 0%, 41%);
+  font-weight: 200;
+  border-radius: 10px;
+  padding: 8px 20px;
+  border-color: gray;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (width<= 600px) {
+  body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .mainCon{
+    /* height: 100%;
+    width: 100%; */
+    max-width: 100vh;
+    margin: 8vh auto 0 auto;
+  }
+  .Con{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: inherit;
+    align-items: center;
+    transform: rotate(-180deg);
+  }
+  .photo #hor {
+    width: 91%;
+    height: 300px;
+     margin-right: 0px;   
+    transform: rotate(180deg);
+    padding-top: 2em;
+   }
+   .writCon{
+    width: 95%;
+    height: 390px;
+    margin-top: 20px;
+    margin-left: 3vw;
+    text-align: center;
+    transform: rotate(-180deg);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
   }
-  to {
-    transform: rotate(360deg);
+  .writCon h1{
+    padding: 10px 0px 0px 15px;
+    font-size: 35px;
   }
+  .writCon p{
+    padding: 16px 5px 0px 0;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
+  
+  }
+ 
+}
+@media (width = 768px) {
+  body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .mainCon{
+    max-width: 100vh;
+    margin: 8vh auto 0 auto;
+  }
+  .Con{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: inherit;
+    align-items: center;
+    transform: rotate(-180deg);
+  }
+  .photo #hor {
+    width: 100%;
+    height: 480px;
+    margin-right: 0px;   
+    transform: rotate(180deg);
+    padding-top: 1em;
+    padding-left: 0em;
+    
+   }
+   .pic{
+    padding-left: 0em;
+    width: auto;
+    
+   }
+   .writCon{
+    width: 95%;
+    height: 390px;
+    margin-top: 20px;
+    margin-left: 3vw;
+    text-align: center;
+    transform: rotate(-180deg);
+
+
+  }
+  .writCon h1{
+    padding: 8px 0px 0px 15px;
+    font-size: 60px;
+  }
+  .writCon p{
+    padding: 9px 5px 0px 10px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 29px;
+  
+  }
+}
+@media (width = 820px) {
+  body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .mainCon{
+    max-width: 100vh;
+    margin: 8vh auto 0 auto;
+  }
+  .Con{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: inherit;
+    align-items: center;
+    transform: rotate(-180deg);
+  }
+  .photo #hor {
+    width: 100%;
+    height: 480px;
+    margin-right: 0px;   
+    transform: rotate(180deg);
+    padding-top: 1em;
+    padding-left: 0em;
+    
+   }
+   .pic{
+    padding-left: 0em;
+    width: auto;
+    
+   }
+   .writCon{
+    width: 95%;
+    height: 390px;
+    margin-top: 20px;
+    margin-left: 3vw;
+    text-align: center;
+    transform: rotate(-180deg);
+
+
+  }
+  .writCon h1{
+    padding: 8px 0px 0px 15px;
+    font-size: 70px;
+  }
+  .writCon p{
+    padding: 9px 5px 0px 10px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 33px;
+  
+  }
+  .btn1{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 63px;
+    border-radius: 15px;
+    font-size: 22px;
+  }
+
+}
+@media (width = 912px) {
+  body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .mainCon{
+    max-width: 100vh;
+    margin: 8vh auto 0 auto;
+  }
+  .Con{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: inherit;
+    align-items: center;
+    transform: rotate(-180deg);
+  }
+  .photo #hor {
+    width: 100%;
+    height: 520px;
+    margin-right: 0px;   
+    transform: rotate(180deg);
+    padding-top: 1em;
+    padding-left: 0em;
+    
+   }
+   .pic{
+    padding-left: 0em;
+    width: auto;
+    
+   }
+   .writCon{
+    width: 95%;
+    height: 390px;
+    margin-top: 20px;
+    margin-left: 3vw;
+    text-align: center;
+    transform: rotate(-180deg);
+
+
+  }
+  .writCon h1{
+    padding: 8px 0px 0px 15px;
+    font-size: 80px;
+  }
+  .writCon p{
+    padding: 9px 5px 0px 10px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 37px;
+  
+  }
+  .btn1{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 63px;
+    border-radius: 15px;
+    font-size: 22px;
+  }
+
 }
